@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+}
+
+.item {
+  width: 150px;
+  height: 66px;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: #828282;
+  text-align: center;
+  cursor: grab;
+  overflow: scroll;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.item::-webkit-scrollbar {
+  display: none;
+}
+
+.placeholder {
+  width: 154px;
+  height: 580px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.placeholder::-webkit-scrollbar {
+  width: 3px;
+  height: 10px;
+}
+
+.placeholder::-webkit-scrollbar-thumb {
+  background: #d64974;
+}
+
+.start {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+}
+
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+
+.done {
+  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.hold {
+  border: 3px solid rgb(255, 213, 220);
+  box-shadow: none;
+}
+
+.hide {
+  opacity: 0 !important;
+}
+
+.hovered {
+  border: 2px solid #d64974;
+  border-radius: 22px;
+}
+
+.add {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 6%;
+  bottom: 20px;
+  background: url("https://cdn3.iconfinder.com/data/icons/gradient-circle/36/5004-512.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.trash {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 100%;
+  background: #f7f6f7;
+  box-shadow: 10px 10px 9px rgba(198, 198, 198, 0.36);
+  transition: all 0.5s ease-in-out;
+}
+
+.trash_can {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 20%;
+  right: 20%;
+  background-image: url("https://cdn.iconscout.com/icon/free/png-256/recycle-bin-3787464-3169092.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
